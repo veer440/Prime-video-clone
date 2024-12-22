@@ -4,6 +4,10 @@
     filter: blur(8px); */
 }
 
+/* @media (min-width)&&(max-width : 1100px) {
+    font-size: ;    
+} */
+
 .body nav {
     position: fixed;
 }
@@ -14,20 +18,20 @@
     /* margin-right: 30px; */
     margin-left: 15px;
     /* width: 96vw; */
+    display: flex;
     height: 85px;
     filter: blur(none);
     background-color: rgba(24, 24, 24, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(24, 24, 24, 0.3);
-    direction: scroll;
     border-bottom-right-radius: 8%;
     border-bottom-left-radius: 8%;
-    display: flex;
     z-index: 2;
 }
+
 
 
 .nav1 {
@@ -36,7 +40,18 @@
     justify-content: start;
     padding-left: 10px;
     text-decoration: none;
+    color: white;
 
+}
+
+
+.navhover :hover{
+    box-shadow: 0px 6px 10px rgb(195, 179, 179);
+    background-color: white;
+    height: 50px;
+    transform: scale(1.0);
+    text-shadow: 0px 4px 4px black;
+    color: black;
 }
 
 #i {
@@ -48,11 +63,14 @@
     color: white;
 }
 
-#i1 {
+
+ #i1 {
     padding: 10px 20px 1px 40px;
     font-size: 20px;
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+
 
 }
 
@@ -61,14 +79,20 @@
     font-size: 20px;
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+
 }
+
 
 #iii1 {
     padding: 10px 20px 1px 40px;
     font-size: 20px;
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+
 }
+
 
 #bordervertical {
     margin: 10px 10px 5px 10px;
@@ -81,11 +105,24 @@
     border: inherit;
     height: 32px;
     width: 68px;
+    transition: 0.3s;
 }
 
 #i2 {
     padding: 10px 20px 5px 30px;
     font-size: 24px;
+    transition: 0.3s;
+}
+
+#i2 :hover{
+    padding: 2px;
+    height: 32px;
+    width: 68px;
+    border: inherit;
+    box-shadow: 0px 2px 2px white;
+    background-color: blue;
+    color: black;
+
 }
 
 #ii2 {
@@ -106,10 +143,10 @@
     visibility: hidden;
 }
 
-.button :hover {
+/* .button :hover 
     transform: scale(1.01);
 
-}
+} */
 
 #btn {
     border: inherit;
@@ -122,8 +159,8 @@
 
 }
 
-#btn :hover {
-    transform: scale(1.05);
+.button :hover {
+    transform: scale(1.35);
 
 }
 
@@ -186,7 +223,7 @@
 
 #pm1 {
     border: 1px solid rgb(6, 1, 11);
-    width: 100vw;
+    width: 99vw;
     height: 80vh;
 
 }
@@ -211,106 +248,139 @@ div .movieline {
 }
 
 .playbtn {
-    border: 1px solid #ddd;
-    width: 150px;
+    width: 200px;
     padding: 9px;
-    border-radius: 15px;
     margin-top: 15px;
+    filter: blur(none);
+    background-color: rgba(86, 76, 76, 0.2);
+    box-shadow: 0 4px 30px rgba(68, 64, 64, 0.1);
+    box-shadow: 0 4px 30px rgba(63, 60, 60, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(24, 24, 24, 0.3);
+    border-radius: 5%;
+  
 }
 
-.playbtn:hover {
-    background: hsla(0, 0%, 100%, .9);
-    color: #00050d;
-    box-shadow: 0 -4px 28px 0 rgba(var(--action-background-color, 255, 255, 255), .2);
-}
 
 .playbtn #ply {
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
+    font-size: 20px;
+    
+    
 }
 
-.watch-icon .watch-btn {
-    color: #00050d !important;
+
+.playbtn .play-icon{
+    color: white;
+
 }
 
-div #wtch {
+
+.playbtn #wtch {
     color: white;
     position: relative;
-    text-decoration: none;
 
 }
 
 .content1 {
     border: 1px solid rgb(6, 1, 11);
     margin: 50px 0px 0px 50px;
+    color: aliceblue;
+    font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif !important;
     z-index: 1;
+
 }
 
 .content3 {
     border: 1px solid rgb(6, 1, 11);
     margin: 50px 0px 0px 0px;
-    z-index: 1;
-
-}
-
-#cw {
     color: aliceblue;
     font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif !important;
+    z-index: 1;
 
 
 }
 
-.img1 {
+.img1{ 
     display: flex;
-    height: 140px;
-    width: 260px;
     gap: 30px;
+
+}
+
+.img1 :hover {
+    transform: scale(1.11);
 }
 
 #m1 {
+    gap: 30px;
     border-radius: 8%;
+    height: 130px;
+    width: 250px;
 }
 
 #m2 {
+    gap: 30px;
     border-radius: 8%;
+    height: 130px;
+    width: 250px;
 
 }
 
 #m3 {
+    gap: 30px;
     border-radius: 8%;
+    height: 130px;
+    width: 250px;
 
 }
 
 #m4 {
+    gap: 30px;
     border-radius: 8%;
+    height: 130px;
+    width: 250px;
 
 }
 
 #m5 {
+    gap: 30px;
     border-radius: 8%;
+    height: 130px;
+    width: 250px;
 
 }
 
 .content2 {
     border: 1px solid rgb(6, 1, 11);
     margin: 50px 0px 0px 50px;
+    color: aliceblue;
+    font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif !important;
     z-index: 1;
 }
 
-#cw1 {
-    color: aliceblue;
-    font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif !important;
-
+.img2{
+    display: flex;
+    gap: 30px;
+}
+.language {
+    height: 135px;
+    width: 255px;
 
 }
 
-.img2 {
+.img3 {
     display: flex;
-    height: 380px;
-    width: 250px;
     gap: 30px;
+}
+
+.Poriginal {
+    border-radius: 8%;
+    height: 360px;
+    width: 250px;
 }
 
 footer {
